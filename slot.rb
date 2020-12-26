@@ -3,29 +3,6 @@ def slot_game
     point = 0
     coin_select = [10, 30, 50, "やめとく"]
     coin_select_result = 0
-    # num1 = rand(0..9)
-    # num2 = rand(0..9)
-    # num3 = rand(0..9)
-    # num4 = rand(0..9)
-    # num5 = rand(0..9)
-    # num6 = rand(0..9)
-    # num7 = rand(0..9)
-    # num8 = rand(0..9)
-    # num9 = rand(0..9)
-
-    # puts "残りコイン#{coin}"
-    # puts "ポイント#{point}"
-    # puts "何コイン入れますか？"
-    # puts "0(10コイン) 1(30コイン) 2(50コイン) 3(やめとく)"
-    # puts "------------------------"
-
-    # coin_select_result = gets.to_i
-    # puts "エンターを3回おしましょう！"
-    # if coin - coin_select[coin_select_result] > 0
-    #     next_slot = true
-    # else
-    #     next_slot = false
-    # end
 
     next_slot = true
 
@@ -51,9 +28,6 @@ def slot_game
         if coin >= 0
             puts "スロットスタート！"
             next_slot = true
-        # elsif coin == 0
-        #     puts "コインが足りないけど、ラストボーナス！スロットスタート！"
-        #     next_slot = true
         else
             puts "コインが足りませんスロットを終了します。またね！"
             next_slot = false
